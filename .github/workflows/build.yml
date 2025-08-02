@@ -29,7 +29,7 @@ jobs:
     # Add this new step to accept Android licenses
     - name: Accept Android SDK licenses
       run: |
-        flutter doctor --android-licenses
+        yes | flutter doctor --android-licenses
       
 # dart run build_runner build --delete-conflicting-outputs
     - name: "Build Flutter APK Project"
