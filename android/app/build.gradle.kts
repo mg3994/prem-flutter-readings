@@ -34,10 +34,10 @@ android {
             keyPassword = keystoreProperties["keyPassword"] as String
             storeFile = keystoreProperties["storeFile"]?.let { file(it) }
             storePassword = keystoreProperties["storePassword"] as String
-           // keyAlias = 'key0'
-           // keyPassword = '123456'
-           // storeFile = file('palm.jks')
-           // storePassword = '123456'
+           // keyAlias = "key0"
+           // keyPassword = "123456"
+           // storeFile = file("palm.jks")
+           // storePassword = "123456"
         }
     }
 
