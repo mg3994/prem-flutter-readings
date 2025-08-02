@@ -16,7 +16,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.palmistrylive.readings"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 36 // flutter.compileSdkVersion
     ndkVersion = "29.0.13846066"// ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -30,10 +30,14 @@ android {
 
     signingConfigs {
         create("release") {
-            keyAlias = keystoreProperties["keyAlias"] as String
-            keyPassword = keystoreProperties["keyPassword"] as String
-            storeFile = keystoreProperties["storeFile"]?.let { file(it) }
-            storePassword = keystoreProperties["storePassword"] as String
+           // keyAlias = keystoreProperties["keyAlias"] as String
+           // keyPassword = keystoreProperties["keyPassword"] as String
+           // storeFile = keystoreProperties["storeFile"]?.let { file(it) }
+           // storePassword = keystoreProperties["storePassword"] as String
+            keyAlias = 'key0'
+            keyPassword = '123456'
+            storeFile = file('palm.jks')
+            storePassword = '123456'
         }
     }
 
@@ -43,7 +47,7 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        targetSdk = 36 // flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
