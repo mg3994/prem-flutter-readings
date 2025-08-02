@@ -30,14 +30,14 @@ android {
 
     signingConfigs {
         create("release") {
-           // keyAlias = keystoreProperties["keyAlias"] as String
-           // keyPassword = keystoreProperties["keyPassword"] as String
-           // storeFile = keystoreProperties["storeFile"]?.let { file(it) }
-           // storePassword = keystoreProperties["storePassword"] as String
-            keyAlias = 'key0'
-            keyPassword = '123456'
-            storeFile = file('palm.jks')
-            storePassword = '123456'
+            keyAlias = keystoreProperties["keyAlias"] as String
+            keyPassword = keystoreProperties["keyPassword"] as String
+            storeFile = keystoreProperties["storeFile"]?.let { file(it) }
+            storePassword = keystoreProperties["storePassword"] as String
+           // keyAlias = 'key0'
+           // keyPassword = '123456'
+           // storeFile = file('palm.jks')
+           // storePassword = '123456'
         }
     }
 
