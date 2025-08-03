@@ -41,7 +41,7 @@ jobs:
 # dart run build_runner build --delete-conflicting-outputs
     - name: "Build Flutter ABB Project"
       run: |
-        flutter build appbundle --release
+        flutter build appbundle --release --build-name="6.0.0"
 
     - name: Push into Releases Tab
       uses: ncipollo/release-action@v1
