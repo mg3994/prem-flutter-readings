@@ -47,6 +47,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.6
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -60,6 +62,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
@@ -89,3 +93,43 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_launcher_icons:
+  android: true
+  # android: "launcher_icon" or "ic_launcher"
+  ios: true
+  image_path: "assets/images/logo.jpg"
+  remove_alpha_ios: true
+  background_color_ios: "#ffffff"
+  min_sdk_android: 16 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/logo.jpg"
+    background_color: "#hexcode"
+    theme_color: "#ffffff"
+  windows:
+    generate: true
+    image_path: "assets/images/logo.jpg"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/logo.jpg"
+
+
+flutter_native_splash:
+  fullscreen: true
+  android: true
+  ios: false
+  web: false
+  # color: "#262334"
+  android_gravity: center
+  color_android: "#262334"
+  color_dark_android: "#262334"
+  image: assets/images/logo.jpg
+  color_dark: "#262334"
+  image_dark: assets/images/logo.jpg
+  android_12:
+    image: assets/images/logo.jpg
+    color: "#262334"
+    icon_background_color: "#262334"
+
+
