@@ -1,4 +1,4 @@
-name: Make APK and Push into release tab
+name: Make ABB and Push into release tab
 
 on:
   push:
@@ -39,13 +39,13 @@ jobs:
   
       
 # dart run build_runner build --delete-conflicting-outputs
-    - name: "Build Flutter APK Project"
+    - name: "Build Flutter ABB Project"
       run: |
-        flutter build  apk   --release
+        flutter build appbundle --release
 
     - name: Push into Releases Tab
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "build/app/outputs/flutter-apk/*"
+        artifacts: "build/app/outputs/bundle/release/*"
         tag: v1.0.${{ github.run_number }}
         token: ${{ secrets.GITHUB_TOKEN}}
