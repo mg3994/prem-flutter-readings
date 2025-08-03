@@ -9,7 +9,7 @@
   </intent> -->
 </queries>
     <application
-        android:label="readings"
+        android:label="Palmistry Live Readings"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
