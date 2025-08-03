@@ -30,6 +30,13 @@ jobs:
     - name: Accept Android SDK licenses
       run: |
         yes | flutter doctor --android-licenses
+    # - name: Run Flutter Launcher Icons
+    #   # This step runs the flutter_launcher_icons package to generate app icons
+    #   run: flutter pub run flutter_launcher_icons
+    # - name: "Splash Screen"
+    #   # This step runs the flutter_native_splash package to generate a splash screen
+    #   run: dart run flutter_native_splash:create
+  
       
 # dart run build_runner build --delete-conflicting-outputs
     - name: "Build Flutter APK Project"
