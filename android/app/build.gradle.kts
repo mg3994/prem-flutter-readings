@@ -50,8 +50,8 @@ android {
         targetSdk = 36 // flutter.targetSdkVersion
        // versionCode = flutter.versionCode
        // versionName = flutter.versionName
-        versionCode = 6
-        versionName = "6.0"
+        versionCode = 7
+        versionName = "7.0.0"
 
     }
 
